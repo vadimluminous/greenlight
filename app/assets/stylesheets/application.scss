@@ -75,6 +75,14 @@ a {
 
 .header {
   height: $header-height;
+  background-image:url('/assets/images/landing-image-laptop2.png');
+  position:relative;
+  .floating-welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .wrapper {

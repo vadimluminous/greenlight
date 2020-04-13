@@ -102,11 +102,21 @@ a {
 
 .index-footer {
   background:#323232;
+  padding:100px;
+
+  p {
+    color:white;
+  }
+
+  img {
+    width:100px;
+  }
 }
 
 .footer {
   height: $footer-height;
   width: 100%;
+  background:rgb(14, 15, 16) !important;
 }
 
 .background {

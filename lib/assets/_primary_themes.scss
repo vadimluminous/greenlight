@@ -50,9 +50,10 @@ a {
 .btn-outline-primary {
   border-color: $primary-color !important;
   color: $primary-color !important;
+  background: $primary-color !important;
 
   &:hover {
-    background: $primary-color !important;
+    background: inherit !important;
     color: white !important;
   }
 

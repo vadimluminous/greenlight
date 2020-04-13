@@ -77,20 +77,20 @@ a {
   height: $header-height;
   position:relative;
 
-  .floating-welcome {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   h1 {
     color:white;
   }
 }
 .background {
-    background-image:url(asset_path("landing-image-laptop2.png"));
-    height:100vh;
+  background-image:url(asset_path("landing-image-laptop2.png"));
+  height:calc(100vh - $header-height);
+  position:relative;
+  .floating-welcome {
+    position: absolute;
+    top: calc(50% - $header-height);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .wrapper {

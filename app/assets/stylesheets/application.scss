@@ -83,11 +83,11 @@ a {
 }
 .background {
   background-image:url(asset_path("landing-image-laptop2.png"));
-  height:calc(100vh - $header-height);
+  height:calc(100vh - 65px);
   position:relative;
   .floating-welcome {
     position: absolute;
-    top: calc(50% - $header-height);
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

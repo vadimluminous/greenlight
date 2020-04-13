@@ -75,7 +75,7 @@ a {
 
 .header {
   height: $header-height;
-  background-image:url('/assets/images/landing-image-laptop2.png');
+  background-image:url(asset_path("landing-image-laptop2.png"));
   position:relative;
   .floating-welcome {
     position: absolute;

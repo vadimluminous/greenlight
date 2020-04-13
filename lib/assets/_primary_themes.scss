@@ -49,12 +49,12 @@ a {
 
 .btn-outline-primary {
   border-color: $primary-color !important;
-  color: $primary-color !important;
+  color: white !important;
   background: $primary-color !important;
 
   &:hover {
     background: inherit !important;
-    color: white !important;
+    color: $primary-color !important;
   }
 
   &:focus {

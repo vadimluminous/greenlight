@@ -75,7 +75,6 @@ a {
 
 .header {
   height: $header-height;
-  background-image:url(asset_path("landing-image-laptop2.png"));
   position:relative;
 
   .floating-welcome {
@@ -88,6 +87,10 @@ a {
   h1 {
     color:white;
   }
+}
+.background {
+    background-image:url(asset_path("landing-image-laptop2.png"));
+    height:100vh;
 }
 
 .wrapper {

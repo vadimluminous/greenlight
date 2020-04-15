@@ -109,6 +109,7 @@ a {
   }
 }
 
+
 .wrapper {
   position: relative;
   height: auto;
@@ -118,13 +119,22 @@ a {
 .index-footer {
   background:#323232;
   padding:100px;
-
+  font-size:1.3rem;
+  color:white;
+  .row {
+    align-items:end;
+  }
   p {
     color:white;
   }
 
   img {
-    width:100px;
+    width:70px;
+    margin-bottom:10px;
+  }
+  li {
+    font-size:1.5rem;
+    margin-right:10px;
   }
 }
 

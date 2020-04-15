@@ -116,6 +116,12 @@ a {
   min-height: calc(100% - #{$header-height} - #{$footer-height});
 }
 
+.footer-contact {
+  p {
+    display:inline;
+  }
+}
+
 .index-footer {
   background:#323232;
   padding:100px;
@@ -126,13 +132,14 @@ a {
   }
   p {
     color:white;
+    margin-bottom:0
   }
 
   img {
     width:70px;
-    margin-bottom:10px;
+    margin-bottom:20px;
   }
-  li {
+  i {
     font-size:1.5rem;
     margin-right:10px;
   }

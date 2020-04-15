@@ -94,6 +94,21 @@ a {
   }
 }
 
+.joinbuttons {
+
+  a {
+    background: #00A9DA;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+
 .wrapper {
   position: relative;
   height: auto;

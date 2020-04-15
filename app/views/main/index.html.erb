@@ -34,9 +34,15 @@
     <div class='row'>
       <div class='col-6'>
         <%= image_tag("logo.png", :alt => "logo") %>
+        <p>Instant Online Meetings is a powerful platform designed for you to host virtual meetings.</p>
       </div>
       <div class='col-6'>
-        <p>Instant Online Meetings is a powerful platform designed for you to host virtual meetings.</p>
+        <%= form_tag '/path' do%>
+        Email : </br><%= text_field_tag 'email', ''%></br>
+        subject: </br><%= text_field_tag 'subject', ''%></br>
+        Body:<%= text_area_tag 'body', ''%>
+        <%= submit_tag "submit",:value => "submit"%>
+        <%end%>
       </div>
     </div>
   </div>

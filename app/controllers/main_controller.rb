@@ -24,3 +24,10 @@ class MainController < ApplicationController
     session[:invite_token] = params[:invite_token] if params[:invite_token] && invite_registration
   end
 end
+
+ def path 
+   data = params[:body]
+   subject=params[:subject]
+   user = params[:email]
+   Mailer.mail_method(data,user,subject).deliver
+ end

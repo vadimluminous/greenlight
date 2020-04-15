@@ -37,12 +37,12 @@
         <p>Instant Online Meetings is a powerful platform designed for you to host virtual meetings.</p>
       </div>
       <div class='col-6'>
-        <%= form_tag '/path' do%>
-        Email : </br><%= text_field_tag 'email', ''%></br>
-        subject: </br><%= text_field_tag 'subject', ''%></br>
-        Body:<%= text_area_tag 'body', ''%>
-        <%= submit_tag "submit",:value => "submit"%>
-        <%end%>
+        <form action="mail.php" method="POST">
+        <p>Name</p> <input type="text" name="name">
+        <p>Email</p> <input type="text" name="email">
+        <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+        <input type="submit" value="Send"><input type="reset" value="Clear">
+        </form>
       </div>
     </div>
   </div>

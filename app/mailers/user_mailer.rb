@@ -98,9 +98,4 @@ class UserMailer < ApplicationMailer
 
     mail to: admin_emails, subject: t('mailer.user.invite.signup.subject')
   end
-  
-  def mail_method(data,email,subject)
-    @body=data
-    mail(to: email, subject: subject)
-  end
 end

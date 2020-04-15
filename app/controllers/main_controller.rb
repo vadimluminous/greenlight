@@ -23,11 +23,4 @@ class MainController < ApplicationController
     # Store invite token
     session[:invite_token] = params[:invite_token] if params[:invite_token] && invite_registration
   end
-  def path 
-    data = params[:body]
-    subject=params[:subject]
-    user = params[:email]
-    Mailer.mail_method(data,user,subject).deliver
-  end
 end
-

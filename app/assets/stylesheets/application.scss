@@ -94,22 +94,54 @@ a {
   }
 }
 
+.joinbuttons {
+
+  a {
+    background: #00A9DA;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+
+
 .wrapper {
   position: relative;
   height: auto;
   min-height: calc(100% - #{$header-height} - #{$footer-height});
 }
 
+.footer-contact {
+  p {
+    display:inline;
+  }
+}
+
 .index-footer {
   background:#323232;
   padding:100px;
-
+  font-size:1.3rem;
+  color:white;
+  .row {
+    align-items:end;
+  }
   p {
     color:white;
+    margin-bottom:0
   }
 
   img {
-    width:100px;
+    width:70px;
+    margin-bottom:20px;
+  }
+  i {
+    font-size:1.5rem;
+    margin-right:10px;
   }
 }
 

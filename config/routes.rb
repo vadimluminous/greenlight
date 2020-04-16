@@ -134,4 +134,5 @@ Rails.application.routes.draw do
   end
 
   root to: 'main#index'
+  get "/:page" => "static#features"
 end

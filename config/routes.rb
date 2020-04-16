@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   match '/404', to: 'errors#not_found', via: :all, as: :not_found
   match '/500', to: 'errors#internal_error', via: :all, as: :internal_error
 
-  
+  match '/help', to: 'pages#help', via: [:get, :post]
 
   # Signin/Signup routes.
   get '/signin', to: 'sessions#signin', as: :signin
@@ -136,11 +136,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/:page" => "static#show"
-
-  get '/help' => 'pages#help'
-
-  root to: 'main#about'
+  root to: 'main#index'
 
 
 end

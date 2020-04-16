@@ -1,5 +1,6 @@
 class PagesController < ActionController::Base
   def help
-    render "pages/help"
+    # put any code here that you need 
+    # (although for a static view you probably won't have any)
   end
 end

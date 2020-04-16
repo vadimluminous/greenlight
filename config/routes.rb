@@ -138,6 +138,8 @@ Rails.application.routes.draw do
 
   get "/:page" => "static#show"
 
+  get '/help' => 'pages#help'
+
   root to: 'main#index'
 
 

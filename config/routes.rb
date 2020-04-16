@@ -140,7 +140,7 @@ Rails.application.routes.draw do
 
   get '/help' => 'pages#help'
 
-  root to: 'main#index'
+  root to: 'main#about'
 
 
 end

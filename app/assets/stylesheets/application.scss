@@ -92,6 +92,36 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  p {
+    font-size:1.3rem;
+    color:white;
+  }
+}
+
+.slider-footer {
+  position:absolute;
+  width:100%;
+  bottom:0;
+  background:linear-gradient(#ddd,#272727);
+
+  .blue-bar {
+    width:100%;
+    background:$primary;
+    text-align:center;
+    color:white;
+    font-weight:600;
+    padding:2px;
+  }
+  .circle-border {
+    border:1px solid grey;
+    border-radius:50%;
+    padding:20px;
+    width:100px;
+  }
+  .row {
+    padding-top:20px;
+    padding-bottom:0px;
+  }
 }
 
 .joinbuttons {

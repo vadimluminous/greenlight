@@ -18,10 +18,11 @@
   }
 </style>
 <div class="background landing-image">
-  <div class="container pt-9 pb-8 floating-welcome">
+  <div class="container pt-9 pb-8"> <!-- took out .floating-welcome class -->
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center ">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
+        <h1 id="main-text" class="display-4 mb-4">Fully customized platform for<br>business meetings online</h1>
+        <p>Our Instant Online Meetings are an excellent way to connect<br>with clients during these challanging times</p>
       </div>
     </div>
     <div class="row joinbuttons">
@@ -33,6 +34,54 @@
       </div>
     </div>
   </div>
+  <div class='slider-footer'>
+    <div class='blue-bar'>
+      Launch complete customized virtual meeting rooms in days, not months.
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class='circle-border'>
+              <img src="http://getvirtualclass.com/wp-content/uploads/2020/04/film.png">
+            </div>
+            <p>Video</p>
+          </div>
+          <div class="col-2">
+            <div class='circle-border'>
+              <img src="http://getvirtualclass.com/wp-content/uploads/2020/04/headset.png">
+            </div>
+            <p>Voice</p>
+          </div>
+          <div class="col-2">
+            <div class='circle-border'>
+              <img src="http://getvirtualclass.com/wp-content/uploads/2020/04/chat.png">
+            </div>
+            <p>Chat</p>
+          </div>
+          <div class="col-2">
+            <div class='circle-border'>
+              <img src="http://getvirtualclass.com/wp-content/uploads/2020/04/file.png">
+            </div>
+            <p>Document Sharing</p>
+          </div>
+          <div class="col-2">
+            <div class='circle-border'>
+              <img src="http://getvirtualclass.com/wp-content/uploads/2020/04/screen.png">
+            </div>
+            <p>Screen Sharing</p>
+          </div>
+          <div class="col-2">
+            <div class='circle-border'>
+              <img src="http://getvirtualclass.com/wp-content/uploads/2020/04/share-video.png">
+            </div>
+            <p>Session Recording</p>
+          </div>
+      </div>
+    </div>
+    <div class='blue-bar'>
+      New Generation Tools for Online Collaboration
+    </div>
+   </div>
 </div>
 
 <%= render "main/components/features" %>
@@ -40,18 +89,26 @@
 <div class='index-footer'>
   <div class='container'>
     <div class='row'>
-      <div class='col-6'>
+      <div class='col-3 footer-contact'>
         <%= image_tag("logo.png", :alt => "logo") %>
-        <br>
-        <p>Instant Online Meetings is a powerful platform designed for you to host virtual meetings.</p>
-      </div>
-      <div class='col-6 footer-contact'>
         <div class='flex-bot'>
           <i class="icon-phone"></i><p>(949) 531-6098</p>
         </div>
         <div class='flex-bot'>
           <i class="icon-envelope"></i><p>sales@luminoustec.net</p>
         </div>
+      </div>
+      <div class='col-3 footer-contact'>
+        <h4>Site Map</h4>
+        <a href='#'>Home</a>
+        <a href='#'>Features</a>
+        <a href='#'>Contact</a>
+        <a href='#'>Sign Up</a>
+        <a href='#'>Instant Meeting</a>
+      </div>
+      <div class='col-6'>
+        <h4>Find Us Here</h4>
+        <img src='http://www.getvirtualclass.com/wp-content/uploads/2019/07/irvinemap.png'>
       </div>
     </div>
   </div>

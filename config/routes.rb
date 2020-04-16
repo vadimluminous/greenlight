@@ -135,7 +135,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/:page" => "static#show"
+  get "/about" to: "application#about"
 
   root to: 'main#index'
 

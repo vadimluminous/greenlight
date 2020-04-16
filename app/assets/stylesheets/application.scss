@@ -165,9 +165,11 @@ a {
   p {
     color:white;
     margin-bottom:0;
+    font-weight:300;
   }
   .hl {
     color:#467fcf;
+    font-weight:600;
   }
 
   .logo{
@@ -195,6 +197,9 @@ a {
     align-content: center;
     align-items: center;
     margin-top: 20px;
+  }
+  .contact-item {
+    margin-bottom:10px;
   }
 }
 

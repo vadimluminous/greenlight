@@ -1,4 +1,4 @@
-class PagesController < ActionController::Base
+class PagesController < ApplicationController
   layout 'application'
   def help
     # put any code here that you need 

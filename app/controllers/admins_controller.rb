@@ -50,6 +50,10 @@ class AdminsController < ApplicationController
   def site_settings
   end
 
+  # GET /admins/features
+  def features
+  end
+
   # GET /admins/server_recordings
   def server_recordings
     server_rooms = rooms_list_for_recordings

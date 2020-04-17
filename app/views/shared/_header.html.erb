@@ -95,6 +95,10 @@
             </div>
           </div>
         <% else %>
+                  <%= link_to "About", "/b/features" %>
+          <%= link_to "Features", "/b/features", :class => "btn btn-outline-primary mx-2 sign-in-button" %>
+          <%= link_to "Contact", "/b/contacts", :class => "btn btn-outline-primary mx-2 sign-in-button" %>
+
           <% allow_greenlight_accounts = allow_greenlight_accounts? %>
           <% if allow_greenlight_accounts %>
             <%= link_to t("login"), signin_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>

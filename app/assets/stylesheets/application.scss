@@ -203,6 +203,18 @@ a {
   }
 }
 
+.features-page {
+
+  .feature-image {
+    background:url(asset_path("features-featured-image.jpg"));
+    padding:100px;
+    text-align:center;
+  }
+  h1 {
+    color:black;
+  }
+}
+
 .footer {
   height: $footer-height;
   width: 100%;

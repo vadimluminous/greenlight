@@ -231,6 +231,25 @@ a {
   }
 }
 
+.contacts-page {
+  .featured-image {
+    background:url(asset_path("contact-featured-image.jpg"));
+    padding:100px;
+    text-align:center;
+    background-size:cover;
+    background-position-y:bottom;
+  }
+  h1 {
+    color:black;
+    font-size:4rem;
+  }
+  h2 {
+    font-size:2.5rem;
+  }
+  h3 {
+    color:#467fcf;
+  }
+}
 .footer {
   height: $footer-height;
   width: 100%;

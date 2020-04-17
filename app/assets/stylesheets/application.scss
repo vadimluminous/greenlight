@@ -393,4 +393,13 @@ table {
   .join-demo {
     display:none;
   }
+  .features-page {
+    .row {
+      margin:0px;
+      margin-top:20px;
+    }
+    .col-lg-6 {
+      padding:0px;
+    }
+  }
 }

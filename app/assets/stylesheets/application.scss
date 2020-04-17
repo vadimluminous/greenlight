@@ -374,5 +374,19 @@ table {
       padding:2px;
     }
   }
-
+  .landing-image {
+    height:inherit;
+  }
+  .slider-footer {
+    position:relative;
+  }
+  .joinbuttons {
+    text-align:center !important;
+    .text-left {
+      margin-top:10px;
+    }
+  }
+  .join-demo {
+    display:none;
+  }
 }

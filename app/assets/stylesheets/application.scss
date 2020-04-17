@@ -85,6 +85,7 @@ a {
 .landing-image {
   background-image:url(asset_path("landing-image-laptop2.png"));
   height:calc(100vh - 65px);
+  min-height:680px;
   position:relative;
   .floating-welcome {
     position: absolute;

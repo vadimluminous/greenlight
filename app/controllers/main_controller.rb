@@ -20,6 +20,7 @@ class MainController < ApplicationController
   include Registrar
   # GET /
   def index
+  	redirect_to "https://instantonlinemeetings.com"
     # Store invite token
     session[:invite_token] = params[:invite_token] if params[:invite_token] && invite_registration
   end

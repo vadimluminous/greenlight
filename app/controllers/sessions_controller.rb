@@ -50,7 +50,7 @@ class SessionsController < ApplicationController
   # GET /signup
   def new
     # Check if the user needs to be invited
-    redirect_to "https://google.com"
+    # redirect_to "https://google.com"
 
     if invite_registration
       redirect_to root_path, flash: { alert: I18n.t("registration.invite.no_invite") } unless params[:invite_token]

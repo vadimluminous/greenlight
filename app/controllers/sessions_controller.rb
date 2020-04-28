@@ -51,21 +51,19 @@ class SessionsController < ApplicationController
   def new
     # Check if the user needs to be invited
     # redirect_to "https://google.com"
-    if params[:token] == 'QX350127'
-        if invite_registration
-          redirect_to root_path, flash: { alert: I18n.t("registration.invite.no_invite") } unless params[:invite_token]
-
-          session[:invite_token] = params[:invite_token]
-        end
-
-        check_if_twitter_account(true)
-
-        @user = User.new
-    else
-        do redirect_to "https://instantonlinemeetings.com"
+    if params[:token] != 'QX350127'
+    do redirect_to "https://instantonlinemeetings.com"
     end
 
+    if invite_registration
+      redirect_to root_path, flash: { alert: I18n.t("registration.invite.no_invite") } unless params[:invite_token]
 
+      session[:invite_token] = params[:invite_token]
+    end
+
+    check_if_twitter_account(true)
+
+    @user = User.new
   end
 
   # POST /users/login

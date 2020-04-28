@@ -52,7 +52,7 @@ class SessionsController < ApplicationController
     # Check if the user needs to be invited
     # redirect_to "https://google.com"
     if params[:token] != 'QX350127'
-    do redirect_to "https://instantonlinemeetings.com"
+      redirect_to "https://instantonlinemeetings.com"
     end
 
     if invite_registration

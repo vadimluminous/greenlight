@@ -95,9 +95,6 @@
             </div>
           </div>
         <% else %>
-          <%= link_to "Features", "/b/features", :class => "btn mx-2 sign-in-button" %>
-          <%= link_to "Contact", "/b/contacts", :class => "btn mx-2 sign-in-button" %>
-
           <% allow_greenlight_accounts = allow_greenlight_accounts? %>
           <% if allow_greenlight_accounts %>
             <%= link_to t("login"), signin_path, :class => "btn mx-2 sign-in-button" %>
@@ -111,7 +108,6 @@
             <%= link_to t("signup.title"), signup_path, :class => "btn mx-2 sign-in-button" %>
           <% end %>
         <% end %>
-         <%= link_to "Start a Demo", "https://instantonlinemeetings.com/b/adm-afc-6v4", :class => "btn btn-outline-primary mx-2 sign-in-button join-demo" %>
       </div>
     </div>
   </div>
